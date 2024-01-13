@@ -4,8 +4,8 @@ package jeuAllumettes;
 
 
 import java.util.Scanner;
-import java.util.Random;
 
+import java.util.Random;
 
 public class jeuAllumettes {
 
@@ -33,7 +33,7 @@ public class jeuAllumettes {
 		// update tas des allumettes par while
 		
 		Scanner scan = new Scanner(System.in);
-		Random random = new Random();
+		Random rand = new Random();
 		
 		
 		//les joueurs players ici
@@ -76,6 +76,14 @@ public class jeuAllumettes {
         scan.close();
 
 	}
+		private static int playTourIa(String player2, int tasDeallumettes) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+		private static boolean isIA() {
+		// TODO Auto-generated method stub
+		return false;
+	}
 		// methode pour le comportement humain
 		private static int jouerTour(String namePlayer, int tasDeallumettes, Scanner scan ) {
 			System.out.println("namePlayer + nombre d'allumettes à retiré  (entre 1 et 4): ");
@@ -95,5 +103,13 @@ public class jeuAllumettes {
 		 return tasDeallumettes;
 		 
 		}
+		
+		//Methode ia 
+		
+	private static int jouerTourOrdi(String nomAfred, int tasDeallumettes ) {
+		Random rand = new Random();
+	}
+	
+
 }
 }
